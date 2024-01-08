@@ -1,0 +1,17 @@
+version: '3'
+services:
+  jupyter-tensorflow:
+    image: jupyter/tensorflow-notebook
+    ports: 
+      - 8888:8888
+    volumes:
+      - ./model:/home/jovyan/work
+      
+  selenium-standalone:
+    image: seleniarm/standalone-chromium:latest
+    environment:
+      - SE_NODE_OVERRIDE_MAX_SESSIONS=true
+      - SE_NODE_MAX_SESSIONS=5
+    ports:
+      - 7900:7900
+      - 4444:4444
