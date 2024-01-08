@@ -41,6 +41,4 @@ The current score depends a lot in how the Facebook search engine works. For eac
 There are a lot of comments that mixed between Eng/Vie but the current model is only able to predict score for the Vie. 
 
 ## Further work
-The sentiment analysis model must be able to score only both Eng and Vie, and has the ability to address the named entity in a sentence to make sure that the comments are exactly related to the keyword.
-
-Besides, need to identify the languages before performing sentiment analysis.
+The sentiment analysis model must be able to score only both Eng and Vie, and has the ability to address the named entity in a sentence to make sure that the comments are exactly related to the keyword.Besides, need to identify the languages before performing sentiment analysis. Because Vietnamese has the non-space characteristic that differ from English (space language), the word segmentation is a good pre-proccesing step that I missed to do in the current model.
