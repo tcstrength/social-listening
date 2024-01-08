@@ -1,6 +1,8 @@
 # social-listening
 Do sentiment analysis to score a `keyword` on the social networking sites. My aim is to score the business, however, it is far from that destination!
 
+__Note__: The code need to be run under `jupyter/tensorflow-notebook` container with the mount `./model:/home/jovyan/work`
+
 ## Docker compose
 ```bash
 docker compose up
